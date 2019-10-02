@@ -1,0 +1,23 @@
+// Tejuino's default navbar behaviour
+
+nav {
+  ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0 3rem;
+    li { margin: 1rem 0; }
+  }
+}
+
+// Navbar directions
+nav.nav-right ul { justify-content: flex-end; }
+nav.nav-left ul { justify-content: flex-start; }
+
+// Navbar decoration
+nav.nav-deco ul li::after {
+  content: "|";
+  margin: 0 2rem;
+  position: relative;
+  &:nth-child(1) { content: ""; }
+}

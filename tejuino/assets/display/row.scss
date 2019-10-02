@@ -1,0 +1,21 @@
+// Tejuino's row properties
+
+.row {
+  &::before,
+  &::after {
+    content: "";
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+  &.row-left { justify-content: flex-start; }
+  &.row-center { justify-content: center; }
+  &.row-right { justify-content: flex-end; }
+  align-content: center;
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 1rem;
+  width: 100%;
+}
