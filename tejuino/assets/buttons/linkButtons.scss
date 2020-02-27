@@ -24,13 +24,13 @@ $buttonaccepthover: #0e7e0a;
 $buttonalert: #ee0000;
 $buttonalerthover: #a30000;
 
-button.btn-link.alert {
+button.btn-alert {
   background-color: $buttonalert;
   border: 2px solid $buttonalerthover;
   &:hover { background-color: $buttonalerthover; }
 }
 
-button.btn-link.accept {
+button.btn-accept {
   background-color: $buttonaccept;
   border: 2px solid $buttonaccepthover;
   &:hover { background-color: $buttonaccepthover; }
