@@ -50,62 +50,6 @@ p {
   margin: 0.75rem 0;
 }
 
-nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0 3rem;
-}
-
-nav ul li {
-  margin: 1rem 0;
-}
-
-nav.nav-right ul {
-  justify-content: flex-end;
-}
-
-nav.nav-left ul {
-  justify-content: flex-start;
-}
-
-nav.nav-deco ul li::after {
-  content: "|";
-  margin: 0 2rem;
-  position: relative;
-}
-
-nav.nav-deco ul li::after:nth-child(1) {
-  content: "";
-}
-
-footer {
-  display: block;
-  padding: 5rem 0;
-  text-align: center;
-}
-
-footer ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-}
-
-input {
-  border: 0.1rem solid #eaeaea;
-  border-radius: 0.5rem;
-  color: inherit;
-  font-size: inherit;
-  margin: 0.25rem 0.5rem;
-  padding: 0.25rem 0.5rem;
-  width: 80%;
-}
-
-label {
-  font-weight: 700;
-}
-
 .container {
   box-sizing: border-box;
   display: flex;
@@ -144,15 +88,15 @@ label {
 }
 
 .row.row-left {
-  justify-content: flex-start;
+  text-align: left;
 }
 
 .row.row-center {
-  justify-content: center;
+  text-align: center;
 }
 
 .row.row-right {
-  justify-content: flex-end;
+  text-align: right;
 }
 
 [class^=col-] {
@@ -423,6 +367,125 @@ label {
   }
 }
 
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0 3rem;
+}
+
+nav ul li {
+  margin: 1rem 0;
+}
+
+nav.nav-right ul {
+  justify-content: flex-end;
+}
+
+nav.nav-left ul {
+  justify-content: flex-start;
+}
+
+nav.nav-deco ul li::after {
+  content: "|";
+  margin: 0 2rem;
+  position: relative;
+}
+
+nav.nav-deco ul li::after:nth-child(1) {
+  content: "";
+}
+
+footer {
+  display: block;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+}
+
+input {
+  color: inherit;
+  font-size: inherit;
+  margin: 0.25rem 0.5rem;
+  padding: 0.25rem 0.5rem;
+  width: 80%;
+}
+
+input[type=text],
+input[type=password] {
+  border: 0.1rem solid #eaeaea;
+  border-radius: 0.5rem;
+}
+
+/*
+<input type="button">
+<input type="checkbox">
+<input type="color">
+<input type="date">
+<input type="datetime-local">
+<input type="email">
+<input type="file">
+<input type="hidden">
+<input type="image">
+<input type="month">
+<input type="number">
+<input type="password">
+<input type="radio">
+<input type="range">
+<input type="reset">
+<input type="search">
+<input type="submit">
+<input type="tel">
+<input type="text">
+<input type="time">
+<input type="url">
+<input type="week">
+*/
+
+label {
+  font-weight: 700;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 1.5%;
+}
+
+ul li {
+  margin-left: 1.5rem;
+}
+
+ul li ul {
+  list-style: circle;
+}
+
+ul li ul li {
+  margin-left: 1rem;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 1.5%;
+}
+
+ol li {
+  margin-left: 1.5rem;
+}
+
+ol li ol {
+  list-style: decimal-leading-zero;
+}
+
+ol li ol li {
+  margin-left: 1rem;
+}
+
 h1,
 h2,
 h3,
@@ -431,6 +494,7 @@ h5,
 h6 {
   line-height: 1.8;
   margin: 0.5rem 0;
+  width: 100%;
 }
 
 h1 {
