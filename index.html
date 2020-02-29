@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejuino Docs</title>
+  <link rel="icon" type="image/png" href="public/favicon.png">
+  <link rel="stylesheet" href="tejuino/tejuino.css">
+</head>
+<body>
+  <div class="container container-main">
+    <div class="row row-introduction">
+      <div class="container container-introduction">
+        <div class="row row-title row-center">
+          <div class="col-12">
+            <img src="public/images/Tejuino.png" alt="Tejuino Logo" style="width: 30rem;">
+          </div>
+          <h2>Tejuino.css</h2>
+        </div>
+        <div class="row row-abstract row-center">
+          <h4>A light-weight CSS framework that lets you jump right into the action<h4>
+        </div>
+      </div>
+    </div>
+    <div class="row-row-info">
+      <div class="container">
+        <div class="row row-description row-center">
+          <div class="col-12">
+            Tejuino is a framework that allows the user a wide range of configuration in their page's
+            HTML without the need of writing too complex css. Tejuino provides a logical approach when 
+            assigning the page's layout without sacrificing any possible displays. With a mobile-first 
+            approach, Tejuino aims to provide an homogeneous experience across multiple devices.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-info-display">
+      <div class="container">
+        <div class="row row-resets">
+          <h5>Resets</h5>
+          <div class="col-12">
+            Tejuino contains a dedicated reset file that provides a blank HTML look to the page; this 
+            means that almost all HTML elements have been reset to a basic property, i.e.: no margins 
+            & no padding. If there are elements that the framework does not modify in a direct way, their 
+            reset properties will still apply.
+          </div>
+        </div>
+        <div class="row row-general-display">
+          <h5>General Display Properties</h5>
+          <div class="col-12">
+            Tejuino's main elements are 3: the <span class="code-quote">container</span>, the 
+            <span class="code-quote">row</span> and the <span class="code-quote">column</span>.<br />
+            Tejuino approaches web development as if every element in a web page is either one of those 
+            three. Containers carry rows, columns or both, rows separate the different possible paragraphs 
+            inside the containers, and columns provide a general element view for the page.
+          </div>
+          <div class="col-12">
+            <div class="container" style="border: 0.1rem solid #690000; margin: 3rem 0;">
+              <div class="row" style="border: 0.1rem solid #00008b">
+                <div class="col-12" style="border: 0.1rem solid #008000">This is a better way</div>
+                <div class="col-12" style="border: 0.1rem solid #008000">Of appreciating what I mean</div>
+              </div>
+              <div class="row" style="border: 0.1rem solid #00008b">
+                <div class="col-6" style="border: 0.1rem solid #008000">Don't you</div>
+                <div class="col-6" style="border: 0.1rem solid #008000">think?</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            For the best experience, use <span class="code-quote">div</span>s for all of the three elements.
+          </div>
+        </div>
+        <div class="row row-containers">
+          <h5>Containers</h5>
+          <div class="col-12">
+            Containers are the bulk of Tejuino; providing a clear way of separating elements in a page, 
+            containers hold together rows, columns and even other containers. They have a 
+            <span class="code-quote">padding</span> of 10px in all directions, and a 
+            <span class="code-quote">margin</span> of 0 to top & bottom and auto to the sides.
+          </div>
+        </div>
+        <div class="row row-rows">
+          <h5>Rows</h5>
+          <div class="col-12">
+            Rows provide a better way of differentiating elements inside the containers; more specifically,
+            and as its class suggest, rows. A container can have as many rows as the user considers, and they 
+            have a 10px <span class="code-quote">padding</span>. They will also always start at the left of the 
+            element and will <span class="code-quote">align its content</span> to the center.
+          </div>
+          <h6>More Config</h6>
+          <div class="col-12">
+            Rows can also provide its content with an specific direction with three self explanatory classes:
+            <div class="container">
+              <ul>
+                <li><span class="code-quote">row-left</span></li>
+                <li><span class="code-quote">row-center</span></li>
+                <li><span class="code-quote">row-right</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols">
+          <h5>Columns</h5>
+          <div class="col-12">
+            Columns are probably the most important element out of the main three. They let the user set a general 
+            view, order the elements inside a row and provide the option to set collapse markers for mobile view.<br />
+            Columns divide its parent container into 12 different sections, and can be set to occupy all or part of 
+            that space.
+          </div>
+          <div class="col-12">
+            <div class="container container-col-test">
+              <div class="row row-center row-col-simple-test">
+                <div class="col-12" style="border: 0.1rem solid #0a0a0a">col-12</div>
+                <div class="col-1" style="border: 0.1rem solid #0a0a0a">col-1</div>
+                <div class="col-11" style="border: 0.1rem solid #0a0a0a">col-11</div>
+                <div class="col-2" style="border: 0.1rem solid #0a0a0a">col-2</div>
+                <div class="col-10" style="border: 0.1rem solid #0a0a0a">col-10</div>
+                <div class="col-3" style="border: 0.1rem solid #0a0a0a">col-3</div>
+                <div class="col-9" style="border: 0.1rem solid #0a0a0a">col-9</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">col-4</div>
+                <div class="col-8" style="border: 0.1rem solid #0a0a0a">col-8</div>
+                <div class="col-5" style="border: 0.1rem solid #0a0a0a">col-5</div>
+                <div class="col-7" style="border: 0.1rem solid #0a0a0a">col-7</div>
+                <div class="col-6" style="border: 0.1rem solid #0a0a0a">col-6</div>
+                <div class="col-6" style="border: 0.1rem solid #0a0a0a">col-6</div>
+              </div>
+              <h6>More about cols!</h6>
+              <div class="row row-col-adv-test">
+                <div class="col-3" style="border: 0.1rem solid #0a0a0a">Cols can</div>
+                <div class="col-3" style="border: 0.1rem solid #0a0a0a">also be</div>
+                <div class="col-3" style="border: 0.1rem solid #0a0a0a">set like</div>
+                <div class="col-3" style="border: 0.1rem solid #0a0a0a">this!</div>
+              </div>
+              <div class="row row-col-adv-test">
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">Or</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">like</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">this</div>
+              </div>
+              <div class="row row-col-adv-test">
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">Cols</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">will</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">arrange</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">like</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">this</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">if</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">you</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">surpass</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">the</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">12</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">normal</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">sections</div>
+              </div>
+            </div>
+          </div>
+          <h6>Collapsing Cols</h6>
+          <div class="col-12">
+            As mentioned earlier, cols can be configured to collapse within set markers. They allow an easy transition 
+            between mobile and desktop versions of the page. Currently, Tejuino supports four different markers:
+            <div class="container">
+              <ul>
+                <li><span class="code-quote">col-sm</span> will collapse with a minimum width of 558px</li>
+                <li><span class="code-quote">col-md</span> will collapse with a minimum width of 768px</li>
+                <li><span class="code-quote">col-lg</span> will collapse with a minimum width of 992px</li>
+                <li><span class="code-quote">col-xl</span> will collapse with a minimum width of 1200px</li>
+              </ul>
+            </div>
+            Try adjusting the page to see how they work.
+            <div class="container">
+              <div class="row row-collapsing-sm">
+                <div class="col-sm-6" style="border: 0.1rem solid #0a0a0a">This is a</div>
+                <div class="col-sm-6" style="border: 0.1rem solid #0a0a0a">col-sm behaviour</div>
+              </div>
+              <div class="row row-collapsing-md">
+                <div class="col-md-6" style="border: 0.1rem solid #0a0a0a">This is a</div>
+                <div class="col-md-6" style="border: 0.1rem solid #0a0a0a">col-md behaviour</div>
+              </div>
+              <div class="row row-collapsing-lg">
+                <div class="col-lg-6" style="border: 0.1rem solid #0a0a0a">This is a</div>
+                <div class="col-lg-6" style="border: 0.1rem solid #0a0a0a">col-lg behaviour</div>
+              </div>
+              <div class="row row-collapsing-xl">
+                <div class="col-xl-6" style="border: 0.1rem solid #0a0a0a">This is a</div>
+                <div class="col-xl-6" style="border: 0.1rem solid #0a0a0a">col-xl behaviour</div>
+              </div>
+            </div>
+            You can also set multiple markers to your element so that they can be displayed better in different resolutions.
+          </div>
+        </div>
+        <div class="row row-sets">
+          <h5>Set Attributes</h5>
+          <div class="col-12">
+            Tejuino allows the user to set some specific properties to the target HTML element to provide it with specific 
+            behaviours, some of them are:
+          </div>
+          <h6>set-flex</h6>
+          <div class="col-12">
+            This class is self explanatory; it'll provide the element with a <span class="code-quote">display: flex</span>
+            style.
+          </div>
+          <h6>set-hidden</h6>
+          <div class="col-12">
+            This class will provide the element with a <span class="code-quote">visibility: hidden</span> style. Best used 
+            with JS.
+          </div>
+          <h6>set-none</h6>
+          <div class="col-12">
+            This class will attach to the element a <span class="code-quote">display: none</span> style, but for the user to 
+            implement it, it has to specify its size. The size markers are the same as the ones at the columns, with the same 
+            breakpoints:
+            <div class="container">
+              <ul>
+                <li><span class="code-quote">set-sm-none</span> triggers when the page's min width is 558px</li>
+                <li><span class="code-quote">set-md-none</span> triggers when the page's min width is 768px</li>
+                <li><span class="code-quote">set-lg-none</span> triggers when the page's min width is 992px</li>
+                <li><span class="code-quote">set-xl-none</span> triggers when the page's min width is 1200px</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-info-texts">
+      <div class="container">
+        <div class="row row-general-texts">General Texts Info</div>
+        <div class="row row-links">Links Info</div>
+        <div class="row row-titles">Titles Info</div>
+        <div class="row row-inputs">Inputs Info</div>
+      </div>
+    </div>
+    <div class="row row-info-buttons">
+      <div class="container">
+        <div class="row row-linkbtns">Link Buttons Info</div>
+      </div>
+    </div>
+    <div class="row row-info-general">
+      <div class="container">
+        <div class="row row-navbars">Navbars Info</div>
+        <div class="row row-footers">Footers Info</div>
+        <div class="row row-lists">Lists Info</div>
+        <div class="row row-code-tag">Code Tag Info</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
