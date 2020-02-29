@@ -9,9 +9,9 @@
   &::after {
     clear: both;
   }
-  &.row-left { justify-content: flex-start; }
-  &.row-center { justify-content: center; }
-  &.row-right { justify-content: flex-end; }
+  &.row-left { text-align: left; }
+  &.row-center { text-align: center; }
+  &.row-right { text-align: right; }
   align-content: center;
   display: inline-flex;
   flex-wrap: wrap;
