@@ -522,7 +522,7 @@ h6 {
 }
 
 a {
-  color: #1a1a1a;
+  color: inherit;
   font-size: inherit;
   text-decoration: none;
 }
