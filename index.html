@@ -216,19 +216,81 @@
               </ul>
             </div>
           </div>
+          <h6>set-full</h6>
+          <div class="col-12">
+            This class works in conjunction with either a <span class="code-quote">container</span> or a 
+            <span class="code-quote">row</span>, and it'll their <span class="code-quote">padding</span> to 0.
+          </div>
         </div>
       </div>
     </div>
     <div class="row row-info-texts">
       <div class="container">
-        <div class="row row-general-texts">General Texts Info</div>
-        <div class="row row-links">Links Info</div>
-        <div class="row row-titles">Titles Info</div>
-        <div class="row row-inputs">Inputs Info</div>
+        <div class="row row-general-texts">
+          <h5>Texts</h5>
+          <div class="col-12">
+            Tejuino uses 10px as a base measurement for everything related to the page, from fonts to spacing. It's 
+            recommended that users stick to the <span class="code-quote">rem</span> as the default measure tool for 
+            additional <span class="code-quote">css</span> files.<br />
+            Although it's recommended that the user use <span class="code-quote">div</span> as the default tag, 
+            <span class="code-quote">p</span> tags are also supported, providing a <span class="code-quote">margin: 0.75 0</span>
+          </div>
+          <h6>Defaults</h6>
+          <div class="col-12">
+            Tejuino uses <span class="code-quote">Trebuchet MS</span> as its default font, with <span class="code-quote">Lucida</span> 
+            both Sans Unicode, Grande and Sans (in that order) as a fallback. Its also configured to have a 
+            <span class="code-quote">font-size</span> of 1.6rem (16px), a <span class="code-quote">font-height</span> of 1.6, and 
+            a <span class="code-quote">font-weight</span> of 400, with 0 <span class="code-quote">margin</span> & 
+            <span class="code-quote">padding</span>.
+          </div>
+          <h6>Images</h6>
+          <div class="col-12">
+            Images in Tejuino are configured to provide a 100% <span class="code-quote">width</span> in relation of 
+            its parent container, with a <span class="code-quote">height</span> that auto adjusts automatic.
+          </div>
+        </div>
+        <div class="row row-links">
+          <h5>Hyperlinks</h5>
+          <div class="col-12">
+            Hyperlinks are not that different from the regular HTML tag, with a few exceptions. They'll 
+            <span class="code-quote">inherit</span> their parent's colour and it will change to blue #004c9c when hovered; 
+            they'll also provide no <span class="code-quote">text-decoration</span> when hovered: 
+            <a href="https://github.com/FSolM" target="_blank">like this!</a>
+          </div>
+        </div>
+        <div class="row row-titles">
+          <h5>Titles</h5>
+          <div class="col-12">
+            Titles provide a way to differentiate and highlight parts of the page; they come in 6 sizes, from h1 to h6. 
+            All titles provide a <span class="code-quote">margin</span> of 0.5rem both up and down, and 0 to the sides, a 
+            <span class="code-quote">line-height</span> of 1.8, and a <span class="code-quote">width</span> of 100%. For each six h tag, 
+            the <span class="code-quote">font-size</span> decreases:
+            <div class="container">
+              <h1>h1: 5rem or 50px</h1>
+              <h2>h2: 4.2rem or 42px</h2>
+              <h3>h3: 3.6rem or 36px</h3>
+              <h4>h4: 3rem or 30px</h4>
+              <h5>h5: 2.4rem or 24px</h5>
+              <h6>h6: 1.8rem or 18px</h6>
+            </div>
+          </div>
+        </div>
+        <div class="row row-inputs">
+          <h5>Inputs</h5>
+          <div class="col-12">
+            Inputs are stylized depending on the type.
+            <div class="container input-showcase">
+              <div class="col-6">
+                <h6>Type Text</h6>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row row-info-buttons">
       <div class="container">
+        <div class="row row-btns">Regular Buttons info</div>
         <div class="row row-linkbtns">Link Buttons Info</div>
       </div>
     </div>
