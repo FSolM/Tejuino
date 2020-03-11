@@ -18,4 +18,5 @@
   justify-content: flex-start;
   padding: 1rem;
   width: 100%;
+  &.set-full { padding: 0; }
 }

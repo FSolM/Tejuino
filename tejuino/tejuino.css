@@ -69,6 +69,10 @@ p {
   clear: both;
 }
 
+.container.set-full {
+  padding: 0;
+}
+
 .row {
   align-content: center;
   display: inline-flex;
@@ -97,6 +101,10 @@ p {
 
 .row.row-right {
   text-align: right;
+}
+
+.row.set-full {
+  padding: 0;
 }
 
 [class^=col-] {
