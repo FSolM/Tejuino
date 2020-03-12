@@ -278,12 +278,70 @@
         <div class="row row-inputs">
           <h5>Inputs</h5>
           <div class="col-12">
-            Inputs are stylized depending on the type.
-            <div class="container input-showcase">
-              <div class="col-6">
-                <h6>Type Text</h6>
-              </div>
+            Inputs are stylized depending on their type, but they also contain a general configuration: they'll 
+            <span class="code-quote">inherit</span> both their <span class="code-quote">color</span> & 
+            <span class="code-quote">font-size</span> from their parent element, and will provide a 
+            <span class="code-quote">margin</span> & <span class="code-quote">padding</span> of 0.25rem (2.5px) up and down and 0.5rem (5px) 
+            to the sides; they'll also occupy 80% of the <span class="code-quote">width</span> of their parent element. All inputs won't 
+            show their <span class="code-quote">outline</span> when focused.
+            <h6>Text Inputs</h6>
+            <div class="col-12">
+              Text inputs include the types <b>text</b>, <b>password</b>, <b>email</b> and <b>date</b>, including its variants; these inputs 
+              have a #eaeaea solid border of 0.1rem (1px) with 0.5rem (5px) of <span class="code-quote">border-radius</span>.
+              <div class="col-4"><input type="text" placeholder="Text Input" /></div>
+              <div class="col-4"><input type="password" placeholder="Password Input" /></div>
+              <div class="col-4"><input type="email" placeholder="Email Input" /></div>
+              <div class="col-4"><input type="date" /></div>
             </div>
+            <h6>Button Inputs</h6>
+            <div class="col-12">
+              Button inputs include the types <b>button</b>, <b>reset</b> and <b>submit</b>; button inputs are configured to have their default 
+              <span class="code-quote">background-color</span> of #dddddd, but they also contain a <span class="code-quote">padding</span> of 
+              1.5rem (15px) 0. Additionally, they also have their <span class="code-quote">border</span> removed and a 
+              <span class="code-quote">border-radius</span> of 2rem or 20px. They'll change the <span class="code-quote">cursor</span> and their 
+              <span class="code-quote">background-color</span> to #aaaaaa when hovered or active.
+              <div class="col-4"><input type="button" value="Button" /></div>
+              <div class="col-4"><input type="reset" value="Reset" /></div>
+              <div class="col-4"><input type="submit" value="Submit" /></div>
+              If you combine an additional <span class="code-quote">formatted</span> class to either the <b>reset</b> or <b>submit</b> buttons, 
+              they'll look like this.
+              <div class="col-4"><input type="reset" value="Reset Formatted" class="formatted"></div>
+              <div class="col-4"><input type="submit" value="Submit Formatted" class="formatted"></div>
+              If you combine an additional <span class="code-quote">main</span> class to any of the button inputs, they'll look like this:
+              <div class="col-4"><input type="button" value="Button Main" class="main"></div>
+            </div>
+            <h6>File Inputs</h6>
+            <div class="col-12">
+              File inputs just include the <b>file</b> type; <b>file</b> type inputs are notoriously hard to stylize in general, to overcome this, 
+              a <b>label</b> element its necessary to accompany it. In Tejuino, <b>file</b> inputs are hidden, and their functionality its passed 
+              to their respective <b>label</b>; that <b>label</b> its stylized similar to a button: it has the same default 
+              <span class="code-quote">background-color</span> and its alternative when the <b>label</b> its active; it has a  
+              <span class="code-quote">border-radius</span> of 0.75rem or 7.5px and it'll center the text inside of it.
+              <div class="col-4">
+                <input type="file" name="file" id="file" />
+                <label for="file">Add Files</label>
+              </div>
+              The <b>file label</b> also contains two alternative classes: a <span class="code-quote">main</span> & 
+              <span class="code-quote">secondary</span>:
+              <div class="col-4">
+                <input type="file" name="file-main" id="file-main" />
+                <label for="file-main" class="main">Main File Uploader</label>
+              </div>
+              <div class="col-4">
+                <input type="file" name="file-secondary" id="file-secondary" />
+                <label for="file-secondary" class="secondary">Secondary File Uploader</label>
+              </div>
+              If you want the regular unstylized <b>file</b> input, add the <span class="code-quote">show</span> class to it:
+              <div class="col-4"><input type="file" class="show" /></div>
+            </div>
+            <h6>Special Inputs</h6>
+            Special inputs include the <b>color</b>, <b>checkbox</b>, <b>radio</b> and <b>range</b> types; there's currently 
+            any support for these kinds of inputs, so they'll behave like their regular HTML tags with the general 
+            input configuration.
+          </div>
+          <h6>Labels</h6>
+          <div class="col-12">
+            Labels for inputs will only modify the <span class="code-quote">font-weight</span> of the text, modifying it to 700.
           </div>
         </div>
       </div>
