@@ -6,39 +6,112 @@ input {
   margin: 0.25rem 0.5rem;
   padding: 0.25rem 0.5rem;
   width: 80%;
+  &:focus { outline: none; }
 }
 
+// TEXT type inputs
+
 input[type="text"],
-input[type="password"] {
+input[type="search"],
+input[type="url"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="time"],
+input[type="month"],
+input[type="week"] {
   border: 0.1rem solid #eaeaea;
   border-radius: 0.5rem;
 }
 
-/*
-<input type="button">
-<input type="checkbox">
-<input type="color">
-<input type="date">
-<input type="datetime-local">
-<input type="email">
-<input type="file">
-<input type="hidden">
-<input type="image">
-<input type="month">
-<input type="number">
-<input type="password">
-<input type="radio">
-<input type="range">
-<input type="reset">
-<input type="search">
-<input type="submit">
-<input type="tel">
-<input type="text">
-<input type="time">
-<input type="url">
-<input type="week">
+// BUTTON type inputs
 
-*/
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: #dddddd;
+  border: none;
+  border-radius: 2rem;
+  padding: 1.5rem 1rem;
+  &:active,
+  &:hover {
+    background-color: #aaaaaa;
+    cursor: pointer;
+  }
+  &.main {
+    background-color: #1c2e94;
+    color: #ffffff;
+    &:active,
+    &:hover { background-color: #121e63 }
+  }
+}
 
+// Special Buttons
+
+input[type="reset"].formatted {
+  background-color: #992929;
+  color: #ffffff;
+  text-transform: uppercase;
+  &:active,
+  &:hover { background-color: #641e1e; }
+}
+
+input[type="submit"].formatted {
+  background-color: #439929;
+  color: #ffffff;
+  text-transform: uppercase;
+  &:hover,
+  &:active { background-color: #3b8125; }
+}
+
+// FILE type inputs
+
+input[type="file"] {
+  display: none;
+  & + label {
+    background-color: #dddddd;
+    border-radius: 0.75rem;
+    color: inherit;
+    display: flex;
+    font-weight: inherit;
+    justify-content: center;
+    padding: 1rem;
+    width: 80%;
+    &:hover { cursor: pointer; }
+    &:active { background-color: #aaaaaa; }
+  }
+}
+
+input[type="file"].show {
+  display: inline;
+  padding: 1rem;
+}
+
+// Special File Inputs
+
+input[type="file"] {
+  & + label.main {
+    background-color: #1c2e94;
+    color: #ffffff;
+    font-weight: 700;
+    &:active { background-color: #121e63; }
+  }
+  & + label.secondary {
+    background-color: #992929;
+    color: #ffffff;
+    font-weight: 700;
+    &:active { background-color: #641e1e; }
+  }
+}
+
+// SPECIAL type inputs
+// Colour
+// Checkbox
+// Radio
+// Range
 
 label { font-weight: 700; }

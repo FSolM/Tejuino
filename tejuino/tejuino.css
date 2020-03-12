@@ -505,36 +505,131 @@ input {
   width: 80%;
 }
 
+input:focus {
+  outline: none;
+}
+
 input[type=text],
-input[type=password] {
+input[type=search],
+input[type=url],
+input[type=password],
+input[type=email],
+input[type=number],
+input[type=tel],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=time],
+input[type=month],
+input[type=week] {
   border: 0.1rem solid #eaeaea;
   border-radius: 0.5rem;
 }
 
-/*
-<input type="button">
-<input type="checkbox">
-<input type="color">
-<input type="date">
-<input type="datetime-local">
-<input type="email">
-<input type="file">
-<input type="hidden">
-<input type="image">
-<input type="month">
-<input type="number">
-<input type="password">
-<input type="radio">
-<input type="range">
-<input type="reset">
-<input type="search">
-<input type="submit">
-<input type="tel">
-<input type="text">
-<input type="time">
-<input type="url">
-<input type="week">
-*/
+input[type=button],
+input[type=reset],
+input[type=submit] {
+  background-color: #dddddd;
+  border: none;
+  border-radius: 2rem;
+  padding: 1.5rem 1rem;
+}
+
+input[type=button]:active,
+input[type=button]:hover,
+input[type=reset]:active,
+input[type=reset]:hover,
+input[type=submit]:active,
+input[type=submit]:hover {
+  background-color: #aaaaaa;
+  cursor: pointer;
+}
+
+input[type=button].main,
+input[type=reset].main,
+input[type=submit].main {
+  background-color: #1c2e94;
+  color: #ffffff;
+}
+
+input[type=button].main:active,
+input[type=button].main:hover,
+input[type=reset].main:active,
+input[type=reset].main:hover,
+input[type=submit].main:active,
+input[type=submit].main:hover {
+  background-color: #121e63;
+}
+
+input[type=reset].formatted {
+  background-color: #992929;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+input[type=reset].formatted:active,
+input[type=reset].formatted:hover {
+  background-color: #641e1e;
+}
+
+input[type=submit].formatted {
+  background-color: #439929;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+input[type=submit].formatted:hover,
+input[type=submit].formatted:active {
+  background-color: #3b8125;
+}
+
+input[type=file] {
+  display: none;
+}
+
+input[type=file] + label {
+  background-color: #dddddd;
+  border-radius: 0.75rem;
+  color: inherit;
+  display: flex;
+  font-weight: inherit;
+  justify-content: center;
+  padding: 1rem;
+  width: 80%;
+}
+
+input[type=file] + label:hover {
+  cursor: pointer;
+}
+
+input[type=file] + label:active {
+  background-color: #aaaaaa;
+}
+
+input[type=file].show {
+  display: inline;
+  padding: 1rem;
+}
+
+input[type=file] + label.main {
+  background-color: #1c2e94;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+input[type=file] + label.main:active {
+  background-color: #121e63;
+}
+
+input[type=file] + label.secondary {
+  background-color: #992929;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+input[type=file] + label.secondary:active {
+  background-color: #641e1e;
+}
 
 label {
   font-weight: 700;
