@@ -33,7 +33,7 @@ button {
   border-radius: 1rem;
   font-size: 1.5rem;
   padding: 1rem 2rem;
-  width: 50%;
+  width: 80%;
 }
 
 button:focus {
@@ -653,21 +653,25 @@ button.btn-link:hover {
 }
 
 button.btn-alert {
-  background-color: #ee0000;
+  background-color: #af2828;
   border: 0.2rem solid #a30000;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
 button.btn-alert:hover {
   background-color: #a30000;
+  cursor: pointer;
 }
 
 button.btn-accept {
-  background-color: #06ad00;
+  background-color: #088a03;
   border: 0.2rem solid #0e7e0a;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
 button.btn-accept:hover {
   background-color: #0e7e0a;
+  cursor: pointer;
 }

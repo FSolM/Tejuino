@@ -1,37 +1,36 @@
 // Tejuino's buttons with hover styles
 
-// Variables
-$buttonbackground: #003366;
-$buttonbackgroundhover: #0052a3;
-$buttoncolor: #ffffff;
-
 button.btn-link {
-  background-color: $buttonbackground;
-  border: 2px solid $buttonbackgroundhover;
-  color: $buttoncolor;
+  background-color: #003366;
+  border: 0.2rem solid #0052a3;
+  color: #ffffff;
   text-transform: capitalize;
   &:hover {
-    background-color: $buttonbackgroundhover;
+    background-color: #0052a3;
     cursor: pointer;
   }
 }
 
 // Special Buttons
 
-// Variables
-$buttonaccept: #06ad00;
-$buttonaccepthover: #0e7e0a;
-$buttonalert: #ee0000;
-$buttonalerthover: #a30000;
-
 button.btn-alert {
-  background-color: $buttonalert;
-  border: 2px solid $buttonalerthover;
-  &:hover { background-color: $buttonalerthover; }
+  background-color: #af2828;
+  border: 0.2rem solid #a30000;
+  color: #ffffff;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #a30000;
+    cursor: pointer;
+  }
 }
 
 button.btn-accept {
-  background-color: $buttonaccept;
-  border: 2px solid $buttonaccepthover;
-  &:hover { background-color: $buttonaccepthover; }
+  background-color: #088a03;
+  border: 0.2rem solid #0e7e0a;
+  color: #ffffff;
+  text-transform: uppercase;
+  &:hover {
+    background-color: #0e7e0a;
+    cursor: pointer;
+  }
 }
