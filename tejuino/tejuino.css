@@ -29,14 +29,19 @@ body {
 }
 
 button {
-  border-radius: 10px;
-  font-size: 1.2rem;
-  padding: 0.75rem 2rem;
-  text-transform: uppercase;
+  border: none;
+  border-radius: 1rem;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  width: 50%;
+}
+
+button:focus {
+  outline: none;
 }
 
 html {
-  font-size: 10px;
+  font-size: 10px !important;
   margin: 0;
   padding: 0;
 }
@@ -637,7 +642,7 @@ label {
 
 button.btn-link {
   background-color: #003366;
-  border: 2px solid #0052a3;
+  border: 0.2rem solid #0052a3;
   color: #ffffff;
   text-transform: capitalize;
 }
@@ -649,7 +654,8 @@ button.btn-link:hover {
 
 button.btn-alert {
   background-color: #ee0000;
-  border: 2px solid #a30000;
+  border: 0.2rem solid #a30000;
+  text-transform: uppercase;
 }
 
 button.btn-alert:hover {
@@ -658,7 +664,8 @@ button.btn-alert:hover {
 
 button.btn-accept {
   background-color: #06ad00;
-  border: 2px solid #0e7e0a;
+  border: 0.2rem solid #0e7e0a;
+  text-transform: uppercase;
 }
 
 button.btn-accept:hover {
