@@ -288,10 +288,12 @@
             <div class="col-12">
               Text inputs include the types <b>text</b>, <b>password</b>, <b>email</b> and <b>date</b>, including its variants; these inputs 
               have a #eaeaea solid border of 0.1rem (1px) with 0.5rem (5px) of <span class="code-quote">border-radius</span>.
-              <div class="col-4"><input type="text" placeholder="Text Input" /></div>
-              <div class="col-4"><input type="password" placeholder="Password Input" /></div>
-              <div class="col-4"><input type="email" placeholder="Email Input" /></div>
-              <div class="col-4"><input type="date" /></div>
+              <div class="container">
+                <div class="col-sm-4"><input type="text" placeholder="Text Input" /></div>
+                <div class="col-sm-4"><input type="password" placeholder="Password Input" /></div>
+                <div class="col-sm-4"><input type="email" placeholder="Email Input" /></div>
+                <div class="col-sm-4"><input type="date" /></div>
+              </div>
             </div>
             <h6>Button Inputs</h6>
             <div class="col-12">
@@ -300,15 +302,21 @@
               1.5rem (15px) 0. Additionally, they also have their <span class="code-quote">border</span> removed and a 
               <span class="code-quote">border-radius</span> of 2rem or 20px. They'll change the <span class="code-quote">cursor</span> and their 
               <span class="code-quote">background-color</span> to #aaaaaa when hovered or active.
-              <div class="col-4"><input type="button" value="Button" /></div>
-              <div class="col-4"><input type="reset" value="Reset" /></div>
-              <div class="col-4"><input type="submit" value="Submit" /></div>
+              <div class="container">
+                <div class="col-sm-4"><input type="button" value="Button" /></div>
+                <div class="col-sm-4"><input type="reset" value="Reset" /></div>
+                <div class="col-sm-4"><input type="submit" value="Submit" /></div>
+              </div>
               If you combine an additional <span class="code-quote">formatted</span> class to either the <b>reset</b> or <b>submit</b> buttons, 
               they'll look like this.
-              <div class="col-4"><input type="reset" value="Reset Formatted" class="formatted"></div>
-              <div class="col-4"><input type="submit" value="Submit Formatted" class="formatted"></div>
+              <div class="container">
+                <div class="col-sm-4"><input type="reset" value="Reset Formatted" class="formatted"></div>
+                <div class="col-sm-4"><input type="submit" value="Submit Formatted" class="formatted"></div>
+              </div>
               If you combine an additional <span class="code-quote">main</span> class to any of the button inputs, they'll look like this:
-              <div class="col-4"><input type="button" value="Button Main" class="main"></div>
+              <div class="container">
+                <div class="col-sm-4"><input type="button" value="Button Main" class="main"></div>
+              </div>
             </div>
             <h6>File Inputs</h6>
             <div class="col-12">
@@ -317,22 +325,28 @@
               to their respective <b>label</b>; that <b>label</b> its stylized similar to a button: it has the same default 
               <span class="code-quote">background-color</span> and its alternative when the <b>label</b> its active; it has a  
               <span class="code-quote">border-radius</span> of 0.75rem or 7.5px and it'll center the text inside of it.
-              <div class="col-4">
-                <input type="file" name="file" id="file" />
-                <label for="file">Add Files</label>
+              <div class="container">
+                <div class="col-sm-4">
+                  <input type="file" name="file" id="file" />
+                  <label for="file">Add Files</label>
+                </div>
               </div>
               The <b>file label</b> also contains two alternative classes: a <span class="code-quote">main</span> & 
               <span class="code-quote">secondary</span>:
-              <div class="col-4">
-                <input type="file" name="file-main" id="file-main" />
-                <label for="file-main" class="main">Main File Uploader</label>
-              </div>
-              <div class="col-4">
-                <input type="file" name="file-secondary" id="file-secondary" />
-                <label for="file-secondary" class="secondary">Secondary File Uploader</label>
+              <div class="container">
+                <div class="col-sm-4">
+                  <input type="file" name="file-main" id="file-main" />
+                  <label for="file-main" class="main">Main File Uploader</label>
+                </div>
+                <div class="col-sm-4">
+                  <input type="file" name="file-secondary" id="file-secondary" />
+                  <label for="file-secondary" class="secondary">Secondary File Uploader</label>
+                </div>
               </div>
               If you want the regular unstylized <b>file</b> input, add the <span class="code-quote">show</span> class to it:
-              <div class="col-4"><input type="file" class="show" /></div>
+              <div class="container">
+                <div class="col-sm-4"><input type="file" class="show" /></div>
+              </div>
             </div>
             <h6>Special Inputs</h6>
             Special inputs include the <b>color</b>, <b>checkbox</b>, <b>radio</b> and <b>range</b> types; there's currently 
@@ -348,8 +362,31 @@
     </div>
     <div class="row row-info-buttons">
       <div class="container">
-        <div class="row row-btns">Regular Buttons info</div>
-        <div class="row row-linkbtns">Link Buttons Info</div>
+        <div class="row row-btns">
+          <h5>Buttons</h5>
+          <div class="col-12">
+            Buttons provide a way to separate sections in a page, or simply to decorate parts of it; because of that, they've been 
+            separated into two main categories: the normal buttons that were designed around page decoration and the link buttons 
+            that were design around page navigation.<br />
+            All buttons have a <span class="code-quote">border-radius</span> of 1rem (10px), have a 
+            <span class="code-quote">padding</span> of 1rem (10px) 2rem (20px), and provide a 
+            <span class="code-quote">font-size</span> of 1.5rem or 15px. They'll also occupy 80% of their parent container's 
+            <span class="code-quote">width</span>, and won't have any <span class="code-quote">border</span>.
+            <div class="container">
+              <div class="col-sm-4"><button>Basically, like this!</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-linkbtns">
+          Link buttons function very similar to regular buttons. They are differentiated by their colour change when the mouse hovers. To activate 
+          a button link, add the <span class="code-quote">btn-link</span> class to a button. Button links look like this:
+          <div class="container">
+            <div class="col-sm-4"><button class="btn-link">I'm a Button Link!</button></div>
+          </div>
+          They'll provide the regular button with a <span class="code-quote">border</span> of 0.2rem (2px), solid, and with the colour #0052a3, 
+          the <span class="code-quote">background-color</span> will also change to #003366 and the <span class="code-quote">color</span> will be set 
+          to #ffffff. Additionally, 
+        </div>
       </div>
     </div>
     <div class="row row-info-general">
