@@ -358,7 +358,35 @@
             Labels for inputs will only modify the <span class="code-quote">font-weight</span> of the text, modifying it to 700.
           </div>
         </div>
-        <div class="row row-lists">Lists Info</div>
+        <div class="row row-lists">
+          <h5>Lists</h5>
+          <div class="col-12">
+            All list elements have a <span class="code-quote">margin-left</span> of 1.5% and will be set to their default decoration 
+            (for ul disc, for ol decimal). Additionally the internal li elements will have a 
+            <span class="code-quote">margin-left</span> of 1.5rem or 15px. Additional lists inside will behave a little bit different: 
+            a ul inside another ul will have a decoration of circles and its li elements will have a 
+            <span class="code-quote">margin-left</span> of 1rem or 10px; a ol element inside another ol element will have a decoration 
+            of decimals leading to cero and their li elements will also have a <span class="code-quote">margin-left</span> of 1rem.
+            <div class="container">
+              <ul>
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <ul>
+                  <li>Element 1.1</li>
+                  <li>Element 1.2</li>
+                </ul>
+              </ul>
+              <ol>
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <ol>
+                  <li>Element 3.1</li>
+                  <li>Element 3.2</li>
+                </ol>
+              </ol>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="row row-info-buttons">
