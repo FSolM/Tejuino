@@ -569,15 +569,15 @@ ul {
   margin-left: 1.5%;
 }
 
-ul li {
+ul > li {
   margin-left: 1.5rem;
 }
 
-ul li ul {
+ul ul {
   list-style: circle;
 }
 
-ul li ul li {
+ul ul > li {
   margin-left: 1rem;
 }
 
@@ -586,15 +586,15 @@ ol {
   margin-left: 1.5%;
 }
 
-ol li {
+ol > li {
   margin-left: 1.5rem;
 }
 
-ol li ol {
+ol ol {
   list-style: decimal-leading-zero;
 }
 
-ol li ol li {
+ol ol > li {
   margin-left: 1rem;
 }
 
