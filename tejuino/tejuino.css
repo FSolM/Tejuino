@@ -681,6 +681,12 @@ footer.footer-list ul li {
   text-align: start;
 }
 
+span.code-quote {
+  background-color: #1b1f232e;
+  font-family: monospace;
+  font-size: inherit;
+}
+
 button.btn-link {
   background-color: #003366;
   border: 0.2rem solid #0052a3;
