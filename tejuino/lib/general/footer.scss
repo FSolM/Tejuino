@@ -11,3 +11,16 @@ footer {
     margin: 0;
   }
 }
+
+// Footer List
+
+footer.footer-list {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 2.5rem 0;
+  ul {
+    flex-direction: column;
+    li { text-align: start; }
+  }
+}

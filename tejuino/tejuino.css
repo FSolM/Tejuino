@@ -380,108 +380,6 @@ p {
   }
 }
 
-nav {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-nav > ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0 3rem;
-}
-
-nav > ul > li {
-  margin: 1rem;
-}
-
-nav.nav-center {
-  justify-content: center;
-}
-
-nav.nav-left {
-  justify-content: flex-start;
-}
-
-nav.nav-right {
-  justify-content: flex-end;
-}
-
-nav.nav-deco > ul > li {
-  margin: 1rem 0;
-}
-
-nav.nav-deco > ul > li::after {
-  content: "|";
-  margin: 0 2rem;
-  position: relative;
-}
-
-nav.nav-deco > ul > li:last-child::after {
-  content: "";
-}
-
-nav.nav-sticky {
-  position: sticky;
-  top: 0;
-}
-
-nav.nav-top {
-  position: fixed;
-  top: 0;
-  z-index: 1;
-}
-
-footer {
-  display: block;
-  padding: 5rem 0;
-  text-align: center;
-}
-
-footer ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  margin: 0;
-}
-
-ul {
-  list-style: disc;
-  margin-left: 1.5%;
-}
-
-ul li {
-  margin-left: 1.5rem;
-}
-
-ul li ul {
-  list-style: circle;
-}
-
-ul li ul li {
-  margin-left: 1rem;
-}
-
-ol {
-  list-style: decimal;
-  margin-left: 1.5%;
-}
-
-ol li {
-  margin-left: 1.5rem;
-}
-
-ol li ol {
-  list-style: decimal-leading-zero;
-}
-
-ol li ol li {
-  margin-left: 1rem;
-}
-
 h1,
 h2,
 h3,
@@ -664,6 +562,123 @@ input[type=file] + label.secondary:active {
 
 label {
   font-weight: 700;
+}
+
+ul {
+  list-style: disc;
+  margin-left: 1.5%;
+}
+
+ul li {
+  margin-left: 1.5rem;
+}
+
+ul li ul {
+  list-style: circle;
+}
+
+ul li ul li {
+  margin-left: 1rem;
+}
+
+ol {
+  list-style: decimal;
+  margin-left: 1.5%;
+}
+
+ol li {
+  margin-left: 1.5rem;
+}
+
+ol li ol {
+  list-style: decimal-leading-zero;
+}
+
+ol li ol li {
+  margin-left: 1rem;
+}
+
+nav {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0 3rem;
+}
+
+nav > ul > li {
+  margin: 1rem;
+}
+
+nav.nav-center {
+  justify-content: center;
+}
+
+nav.nav-left {
+  justify-content: flex-start;
+}
+
+nav.nav-right {
+  justify-content: flex-end;
+}
+
+nav.nav-deco > ul > li {
+  margin: 1rem 0;
+}
+
+nav.nav-deco > ul > li::after {
+  content: "|";
+  margin: 0 2rem;
+  position: relative;
+}
+
+nav.nav-deco > ul > li:last-child::after {
+  content: "";
+}
+
+nav.nav-sticky {
+  position: sticky;
+  top: 0;
+}
+
+nav.nav-top {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+footer {
+  display: block;
+  padding: 5rem 0;
+  text-align: center;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+}
+
+footer.footer-list {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+  padding: 2.5rem 0;
+}
+
+footer.footer-list ul {
+  flex-direction: column;
+}
+
+footer.footer-list ul li {
+  text-align: start;
 }
 
 button.btn-link {
