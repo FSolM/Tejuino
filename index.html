@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tejuino Docs</title>
+  <link rel="icon" type="image/png" href="public/favicon.png">
+  <link rel="stylesheet" href="tejuino/tejuino.css">
+</head>
+<body>
+  <div class="container container-main">
+    <div class="row row-introduction">
+      <div class="container container-introduction">
+        <div class="row row-title row-center">
+          <div class="col-12">
+            <img src="public/images/Tejuino.png" alt="Tejuino Logo" style="width: 30rem;">
+          </div>
+          <h2>Tejuino.css</h2>
+        </div>
+        <div class="row row-abstract row-center">
+          <h4>A light-weight CSS framework that lets you jump right into the action<h4>
+        </div>
+      </div>
+    </div>
+    <div class="row-row-info">
+      <div class="container">
+        <div class="row row-description row-center">
+          <div class="col-12">
+            Tejuino is a framework that allows the user a wide range of configuration in their page's
+            HTML without the need of writing too complex css. Tejuino provides a logical approach when 
+            assigning the page's layout without sacrificing any possible displays. With a mobile-first 
+            approach, Tejuino aims to provide an homogeneous experience across multiple devices.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-info-display">
+      <div class="container">
+        <div class="row row-resets">
+          <h5>Resets</h5>
+          <div class="col-12">
+            Tejuino contains a dedicated reset file that provides a blank HTML look to the page; this 
+            means that almost all HTML elements have been reset to a basic property, i.e.: no margins 
+            & no padding. If there are elements that the framework does not modify in a direct way, their 
+            reset properties will still apply.
+          </div>
+        </div>
+        <div class="row row-general-display">
+          <h5>General Display Properties</h5>
+          <div class="col-12">
+            Tejuino's main elements are 3: the <span class="code-quote">container</span>, the 
+            <span class="code-quote">row</span> and the <span class="code-quote">column</span>.<br />
+            Tejuino approaches web development as if every element in a web page is either one of those 
+            three. Containers carry rows, columns or both, rows separate the different possible paragraphs 
+            inside the containers, and columns provide a general element view for the page.
+          </div>
+          <div class="col-12">
+            <div class="container" style="border: 0.1rem solid #690000; margin: 3rem 0;">
+              <div class="row" style="border: 0.1rem solid #00008b">
+                <div class="col-12" style="border: 0.1rem solid #008000">This is a better way</div>
+                <div class="col-12" style="border: 0.1rem solid #008000">Of appreciating what I mean</div>
+              </div>
+              <div class="row" style="border: 0.1rem solid #00008b">
+                <div class="col-6" style="border: 0.1rem solid #008000">Don't you</div>
+                <div class="col-6" style="border: 0.1rem solid #008000">think?</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            For the best experience, use divs for all of the three elements.
+          </div>
+        </div>
+        <div class="row row-containers">
+          <h5>Containers</h5>
+          <div class="col-12">
+            Containers are the bulk of Tejuino; providing a clear way of separating elements in a page, 
+            containers hold together rows, columns and even other containers. They have a 
+            <span class="code-quote">padding</span> of 10px in all directions, and a 
+            <span class="code-quote">margin</span> of 0 to top & bottom and auto to the sides.
+          </div>
+        </div>
+        <div class="row row-rows">
+          <h5>Rows</h5>
+          <div class="col-12">
+            Rows provide a better way of differentiating elements inside the containers; more specifically,
+            and as its class suggest, rows. A container can have as many rows as the user considers, and they 
+            have a 10px <span class="code-quote">padding</span>. They will also always start at the left of the 
+            element and will <span class="code-quote">align its content</span> to the center.
+          </div>
+          <h6>More Config</h6>
+          <div class="col-12">
+            Rows can also provide its content with an specific direction with three self explanatory classes:
+            <div class="container">
+              <ul>
+                <li><span class="code-quote">row-left</span></li>
+                <li><span class="code-quote">row-center</span></li>
+                <li><span class="code-quote">row-right</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row row-cols">
+          <h5>Columns</h5>
+          <div class="col-12">
+            Columns are probably the most important element out of the main three. They let the user set a general 
+            view, order the elements inside a row and provide the option to set collapse markers for mobile view.<br />
+            Columns divide its parent container into 12 different sections, and can be set to occupy all or part of 
+            that space.
+          </div>
+          <div class="col-12">
+            <div class="container container-col-test">
+              <div class="row row-center row-col-simple-test">
+                <div class="col-12" style="border: 0.1rem solid #0a0a0a">col-12</div>
+                <div class="col-1" style="border: 0.1rem solid #0a0a0a">col-1</div>
+                <div class="col-11" style="border: 0.1rem solid #0a0a0a">col-11</div>
+                <div class="col-2" style="border: 0.1rem solid #0a0a0a">col-2</div>
+                <div class="col-10" style="border: 0.1rem solid #0a0a0a">col-10</div>
+                <div class="col-3" style="border: 0.1rem solid #0a0a0a">col-3</div>
+                <div class="col-9" style="border: 0.1rem solid #0a0a0a">col-9</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">col-4</div>
+                <div class="col-8" style="border: 0.1rem solid #0a0a0a">col-8</div>
+                <div class="col-5" style="border: 0.1rem solid #0a0a0a">col-5</div>
+                <div class="col-7" style="border: 0.1rem solid #0a0a0a">col-7</div>
+                <div class="col-6" style="border: 0.1rem solid #0a0a0a">col-6</div>
+                <div class="col-6" style="border: 0.1rem solid #0a0a0a">col-6</div>
+              </div>
+              <h6>More about cols!</h6>
+              <div class="row row-col-adv-test">
+                <div class="col-3" style="border: 0.1rem solid #0a0a0a">Cols can</div>
+                <div class="col-3" style="border: 0.1rem solid #0a0a0a">also be</div>
+                <div class="col-3" style="border: 0.1rem solid #0a0a0a">set like</div>
+                <div class="col-3" style="border: 0.1rem solid #0a0a0a">this!</div>
+              </div>
+              <div class="row row-col-adv-test">
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">Or</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">like</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">this</div>
+              </div>
+              <div class="row row-col-adv-test">
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">Cols</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">will</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">arrange</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">like</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">this</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">if</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">you</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">surpass</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">the</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">12</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">normal</div>
+                <div class="col-4" style="border: 0.1rem solid #0a0a0a">sections</div>
+              </div>
+            </div>
+          </div>
+          <h6>Collapsing Cols</h6>
+          <div class="col-12">
+            As mentioned earlier, cols can be configured to collapse within set markers. They allow an easy transition 
+            between mobile and desktop versions of the page. Currently, Tejuino supports four different markers:
+            <div class="container">
+              <ul>
+                <li><span class="code-quote">col-sm</span> will collapse with a minimum width of 558px</li>
+                <li><span class="code-quote">col-md</span> will collapse with a minimum width of 768px</li>
+                <li><span class="code-quote">col-lg</span> will collapse with a minimum width of 992px</li>
+                <li><span class="code-quote">col-xl</span> will collapse with a minimum width of 1200px</li>
+              </ul>
+            </div>
+            Try adjusting the page to see how they work.
+            <div class="container">
+              <div class="row row-collapsing-sm">
+                <div class="col-sm-6" style="border: 0.1rem solid #0a0a0a">This is a</div>
+                <div class="col-sm-6" style="border: 0.1rem solid #0a0a0a">col-sm behaviour</div>
+              </div>
+              <div class="row row-collapsing-md">
+                <div class="col-md-6" style="border: 0.1rem solid #0a0a0a">This is a</div>
+                <div class="col-md-6" style="border: 0.1rem solid #0a0a0a">col-md behaviour</div>
+              </div>
+              <div class="row row-collapsing-lg">
+                <div class="col-lg-6" style="border: 0.1rem solid #0a0a0a">This is a</div>
+                <div class="col-lg-6" style="border: 0.1rem solid #0a0a0a">col-lg behaviour</div>
+              </div>
+              <div class="row row-collapsing-xl">
+                <div class="col-xl-6" style="border: 0.1rem solid #0a0a0a">This is a</div>
+                <div class="col-xl-6" style="border: 0.1rem solid #0a0a0a">col-xl behaviour</div>
+              </div>
+            </div>
+            You can also set multiple markers to your element so that they can be displayed better in different resolutions.
+          </div>
+        </div>
+        <div class="row row-sets">
+          <h5>Set Attributes</h5>
+          <div class="col-12">
+            Tejuino allows the user to set some specific properties to the target HTML element to provide it with specific 
+            behaviours, some of them are:
+          </div>
+          <h6>set-flex</h6>
+          <div class="col-12">
+            This class is self explanatory; it'll provide the element with a <span class="code-quote">display: flex</span>
+            style.
+          </div>
+          <h6>set-hidden</h6>
+          <div class="col-12">
+            This class will provide the element with a <span class="code-quote">visibility: hidden</span> style. Best used 
+            with JS.
+          </div>
+          <h6>set-none</h6>
+          <div class="col-12">
+            This class will attach to the element a <span class="code-quote">display: none</span> style, but for the user to 
+            implement it, it has to specify its size. The size markers are the same as the ones at the columns, with the same 
+            breakpoints:
+            <div class="container">
+              <ul>
+                <li><span class="code-quote">set-sm-none</span> triggers when the page's min width is 558px</li>
+                <li><span class="code-quote">set-md-none</span> triggers when the page's min width is 768px</li>
+                <li><span class="code-quote">set-lg-none</span> triggers when the page's min width is 992px</li>
+                <li><span class="code-quote">set-xl-none</span> triggers when the page's min width is 1200px</li>
+              </ul>
+            </div>
+          </div>
+          <h6>set-full</h6>
+          <div class="col-12">
+            This class works in conjunction with either a <span class="code-quote">container</span> or a 
+            <span class="code-quote">row</span>, and it'll their <span class="code-quote">padding</span> to 0.
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-info-texts">
+      <div class="container">
+        <div class="row row-general-texts">
+          <h5>Texts</h5>
+          <div class="col-12">
+            Tejuino uses 10px as a base measurement for everything related to the page, from fonts to spacing. It's 
+            recommended that users stick to the <span class="code-quote">rem</span> as the default measure tool for 
+            additional <span class="code-quote">css</span> files.<br />
+            Although it's recommended that the user use div as the default tag, <span class="code-quote">p</span> 
+            tags are also supported, providing a <span class="code-quote">margin: 0.75 0</span>.
+          </div>
+          <h6>Defaults</h6>
+          <div class="col-12">
+            Tejuino uses <span class="code-quote">Trebuchet MS</span> as its default font, with <span class="code-quote">Lucida</span> 
+            both Sans Unicode, Grande and Sans (in that order) as a fallback. Its also configured to have a 
+            <span class="code-quote">font-size</span> of 1.6rem (16px), a <span class="code-quote">font-height</span> of 1.6, and 
+            a <span class="code-quote">font-weight</span> of 400, with 0 <span class="code-quote">margin</span> & 
+            <span class="code-quote">padding</span>.
+          </div>
+          <h6>Images</h6>
+          <div class="col-12">
+            Images in Tejuino are configured to provide a 100% <span class="code-quote">width</span> in relation of 
+            its parent container, with a <span class="code-quote">height</span> that auto adjusts automatic.
+          </div>
+        </div>
+        <div class="row row-links">
+          <h5>Hyperlinks</h5>
+          <div class="col-12">
+            Hyperlinks are not that different from the regular HTML tag, with a few exceptions. They'll 
+            <span class="code-quote">inherit</span> their parent's colour and it will change to blue #004c9c when hovered; 
+            they'll also provide no <span class="code-quote">text-decoration</span> when hovered: 
+            <a href="https://github.com/FSolM" target="_blank">like this!</a>
+          </div>
+        </div>
+        <div class="row row-titles">
+          <h5>Titles</h5>
+          <div class="col-12">
+            Titles provide a way to differentiate and highlight parts of the page; they come in 6 sizes, from h1 to h6. 
+            All titles provide a <span class="code-quote">margin</span> of 0.5rem both up and down, and 0 to the sides, a 
+            <span class="code-quote">line-height</span> of 1.8, and a <span class="code-quote">width</span> of 100%. For each six h tag, 
+            the <span class="code-quote">font-size</span> decreases:
+            <div class="container">
+              <h1>h1: 5rem or 50px</h1>
+              <h2>h2: 4.2rem or 42px</h2>
+              <h3>h3: 3.6rem or 36px</h3>
+              <h4>h4: 3rem or 30px</h4>
+              <h5>h5: 2.4rem or 24px</h5>
+              <h6>h6: 1.8rem or 18px</h6>
+            </div>
+          </div>
+        </div>
+        <div class="row row-inputs">
+          <h5>Inputs</h5>
+          <div class="col-12">
+            Inputs are stylized depending on their type, but they also contain a general configuration: they'll 
+            <span class="code-quote">inherit</span> both their <span class="code-quote">color</span> & 
+            <span class="code-quote">font-size</span> from their parent element, and will provide a 
+            <span class="code-quote">margin</span> & <span class="code-quote">padding</span> of 0.25rem (2.5px) up and down and 0.5rem (5px) 
+            to the sides; they'll also occupy 80% of the <span class="code-quote">width</span> of their parent element. All inputs won't 
+            show their <span class="code-quote">outline</span> when focused.
+            <h6>Text Inputs</h6>
+            <div class="col-12">
+              Text inputs include the types <b>text</b>, <b>password</b>, <b>email</b> and <b>date</b>, including its variants; these inputs 
+              have a #eaeaea solid border of 0.1rem (1px) with 0.5rem (5px) of <span class="code-quote">border-radius</span>.
+              <div class="container">
+                <div class="col-sm-4"><input type="text" placeholder="Text Input" /></div>
+                <div class="col-sm-4"><input type="password" placeholder="Password Input" /></div>
+                <div class="col-sm-4"><input type="email" placeholder="Email Input" /></div>
+                <div class="col-sm-4"><input type="date" /></div>
+              </div>
+            </div>
+            <h6>Button Inputs</h6>
+            <div class="col-12">
+              Button inputs include the types <b>button</b>, <b>reset</b> and <b>submit</b>; button inputs are configured to have their default 
+              <span class="code-quote">background-color</span> of #dddddd, but they also contain a <span class="code-quote">padding</span> of 
+              1.5rem (15px) 0. Additionally, they also have their <span class="code-quote">border</span> removed and a 
+              <span class="code-quote">border-radius</span> of 2rem or 20px. They'll change the <span class="code-quote">cursor</span> and their 
+              <span class="code-quote">background-color</span> to #aaaaaa when hovered or active.
+              <div class="container">
+                <div class="col-sm-4"><input type="button" value="Button" /></div>
+                <div class="col-sm-4"><input type="reset" value="Reset" /></div>
+                <div class="col-sm-4"><input type="submit" value="Submit" /></div>
+              </div>
+              If you combine an additional <span class="code-quote">formatted</span> class to either the <b>reset</b> or <b>submit</b> buttons, 
+              they'll look like this.
+              <div class="container">
+                <div class="col-sm-4"><input type="reset" value="Reset Formatted" class="formatted"></div>
+                <div class="col-sm-4"><input type="submit" value="Submit Formatted" class="formatted"></div>
+              </div>
+              If you combine an additional <span class="code-quote">main</span> class to any of the button inputs, they'll look like this:
+              <div class="container">
+                <div class="col-sm-4"><input type="button" value="Button Main" class="main"></div>
+              </div>
+            </div>
+            <h6>File Inputs</h6>
+            <div class="col-12">
+              File inputs just include the <b>file</b> type; <b>file</b> type inputs are notoriously hard to stylize in general, to overcome this, 
+              a <b>label</b> element its necessary to accompany it. In Tejuino, <b>file</b> inputs are hidden, and their functionality its passed 
+              to their respective <b>label</b>; that <b>label</b> its stylized similar to a button: it has the same default 
+              <span class="code-quote">background-color</span> and its alternative when the <b>label</b> its active; it has a  
+              <span class="code-quote">border-radius</span> of 0.75rem or 7.5px and it'll center the text inside of it.
+              <div class="container">
+                <div class="col-sm-4">
+                  <input type="file" name="file" id="file" />
+                  <label for="file">Add Files</label>
+                </div>
+              </div>
+              The <b>file label</b> also contains two alternative classes: a <span class="code-quote">main</span> & 
+              <span class="code-quote">secondary</span>:
+              <div class="container">
+                <div class="col-sm-4">
+                  <input type="file" name="file-main" id="file-main" />
+                  <label for="file-main" class="main">Main File Uploader</label>
+                </div>
+                <div class="col-sm-4">
+                  <input type="file" name="file-secondary" id="file-secondary" />
+                  <label for="file-secondary" class="secondary">Secondary File Uploader</label>
+                </div>
+              </div>
+              If you want the regular unstylized <b>file</b> input, add the <span class="code-quote">show</span> class to it:
+              <div class="container">
+                <div class="col-sm-4"><input type="file" class="show" /></div>
+              </div>
+            </div>
+            <h6>Special Inputs</h6>
+            Special inputs include the <b>color</b>, <b>checkbox</b>, <b>radio</b> and <b>range</b> types; there's currently 
+            any support for these kinds of inputs, so they'll behave like their regular HTML tags with the general 
+            input configuration.
+          </div>
+          <h6>Labels</h6>
+          <div class="col-12">
+            Labels for inputs will only modify the <span class="code-quote">font-weight</span> of the text, modifying it to 700.
+          </div>
+        </div>
+        <div class="row row-lists">
+          <h5>Lists</h5>
+          <div class="col-12">
+            All list elements have a <span class="code-quote">margin-left</span> of 1.5% and will be set to their default decoration 
+            (for ul disc, for ol decimal). Additionally the internal li elements will have a 
+            <span class="code-quote">margin-left</span> of 1.5rem or 15px. Additional lists inside will behave a little bit different: 
+            a ul inside another ul will have a decoration of circles and its li elements will have a 
+            <span class="code-quote">margin-left</span> of 1rem or 10px; a ol element inside another ol element will have a decoration 
+            of decimals leading to cero and their li elements will also have a <span class="code-quote">margin-left</span> of 1rem.
+            <div class="container">
+              <ul>
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <ul>
+                  <li>Element 1.1</li>
+                  <li>Element 1.2</li>
+                </ul>
+              </ul>
+              <ol>
+                <li>Element 1</li>
+                <li>Element 2</li>
+                <ol>
+                  <li>Element 3.1</li>
+                  <li>Element 3.2</li>
+                </ol>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-info-buttons">
+      <div class="container">
+        <div class="row row-btns">
+          <h5>Buttons</h5>
+          <div class="col-12">
+            Buttons provide a way to separate sections in a page, or simply to decorate parts of it; because of that, they've been 
+            separated into two main categories: the normal buttons that were designed around page decoration and the link buttons 
+            that were design around page navigation.<br />
+            All buttons have a <span class="code-quote">border-radius</span> of 1rem (10px), have a 
+            <span class="code-quote">padding</span> of 1rem (10px) 2rem (20px), and provide a 
+            <span class="code-quote">font-size</span> of 1.5rem or 15px. They'll also occupy 80% of their parent container's 
+            <span class="code-quote">width</span>, and won't have any <span class="code-quote">border</span>.
+            <div class="container">
+              <div class="col-sm-4"><button>Basically, like this!</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="row row-linkbtns">
+          Link buttons function very similar to regular buttons. They are differentiated by their colour change when the mouse hovers. To activate 
+          a button link, add the <span class="code-quote">btn-link</span> class to a button. Button links look like this:
+          <div class="container">
+            <div class="col-sm-4"><button class="btn-link">I'm a Button Link!</button></div>
+          </div>
+          They'll provide the regular button with a <span class="code-quote">border</span> of 0.2rem (2px), solid, and with the colour #0052a3, 
+          the <span class="code-quote">background-color</span> will also change to #003366 and the <span class="code-quote">color</span> will be set 
+          to #ffffff. Additionally, the text inside of it will be capitalized and when hovered, the cursor will change to a pointer.
+          <h6>Alert & Accept Buttons</h6>
+          <div class="col-12">
+            Tejuino also provides two quick button classes: <span class="code-quote">btn-alert</span> & <span class="code-quote">btn-accept</span>; 
+            both work very similar to regular link buttons, with the difference being in their colouration (for alert, #ee0000, and #af2828 when 
+            hovered and for accept #088a03, and #0e7e0a when hovered) and that they modify the text to uppercase:
+            <div class="container">
+              <div class="col-sm-4"><button class="btn-alert">Alert Button</button></div>
+              <div class="col-sm-4"><button class="btn-accept">Accept Button</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-info-general">
+      <div class="container">
+        <div class="row row-navbars">
+          <h5>Navbars</h5>
+          <div class="col-12">
+            Tejuino provides general layout for nav elements and it even contains a special class that provides simple and quick decoration for it. 
+            Tejuino navs are design to have two elements in them: an image and an list element, an ul element to be precise, with the navpoints of the 
+            page. By default, nav elements will have a <span class="code-quote">display</span> of flex, will 
+            <span class="code-quote">align-items</span> to the center and will <span class="code-quote">justify-content</span> to the spaces between 
+            (pushing both elements to the sides). As mentioned earlier, Tejuino navbars use inside of them a ul list element for the navpoints of it. 
+            This ul element also has a <span class="code-quote">display</span> of flex, but their elements are justified center and it has a margin of 
+            <span class="code-quote">margin</span> of 0 3rem (30px); their li elements have a <span class="code-quote">margin</span> of 1rem or 10px to 
+            all sides. A base Tejuino navbar will look like this:
+            <div class="container">
+              <nav style="background-color: #9fd0b6;">
+                <ul>
+                  <li>Element</li>
+                  <li>Element</li>
+                </ul>
+              </nav>
+            </div>
+            An additional class can be added in the nav element to control the justification of it. The available classes are:
+            <div class="container">
+              <ul>
+                <li><span class="code-quote">nav-center</span></li>
+                <li><span class="code-quote">nav-left</span></li>
+                <li><span class="code-quote">nav-right</span></li>
+              </ul>
+            </div>
+            To provide the quick decoration for the navbars, just add a nav-deco class to the nav element:
+            <div class="container">
+              <nav class="nav-deco" style="background-color: #9fd0b6;">
+                <ul>
+                  <li>Element</li>
+                  <li>Element</li>
+                  <li>Element</li>
+                </ul>
+              </nav>
+            </div>
+            The last li element of the list won't have the decoration; additionally, the decoration will reset the <span class="code-quote">margin</span> of 
+            the li elements to 1rem (10px) 0. The decorations have their own <span class="code-quote">margin</span> of 0 2rem (20px).<br />
+            <i>The background colours of the navbars are just illustrative, the nav element does not come with them</i><br />
+            Tejuino contains additional nav behaviours. To use them, just add the as an additional class in the nav element. These include:
+            <div class="container">
+              <ul>
+                <li>Sticky Nav: <span class="code-quote">nav-sticky</span></li>
+                <li>Fixed top Nav: <span class="code-quote">nav-top</span></li>
+              </ul>
+            </div>
+            It is recommended to use the <span class="code-quote">set-none</span> classes when developing in mobile to avoid any unexpected nav behaviour.
+          </div>
+        </div>
+        <div class="row row-footers">
+          <h5>Footers</h5>
+          <div class="col-12">
+            Footer elements have a similar behaviour to the nav ones. Default footer behaviour will set its <span class="code-quote">display</span> as a block, 
+            will provide a massive <span class="code-quote">padding</span> of 5rem (50px) 0, and will align the text to center; this simple footer can be used 
+            without the need to add a special <span class="code-quote">col</span> div.
+            <div class="container">
+              <footer style="background-color: #252525; color: #ffffff;">Some footer, right?</footer>
+            </div>
+          </div>
+          An additional use of a list element (ul to be precise) can help to separate the different elements in the footer. The ul element will be set to have 
+          a <span class="code-quote">display</span> of flex, with its justification set to center; additionally, their 
+          <span class="code-quote">list-style</span> will be set to none and their <span class="code-quote">margin</span> will be 0.
+          <div class="container">
+            <footer style="background-color: #252525; color: #ffffff;">
+              <ul>
+                <li>A list?</li>
+                <li>In my footer?</li>
+              </ul>
+            </footer>
+          </div>
+          Footers can also be set to have a special class called <span class="code-quote">footer-list</span>. This class will reorganize the footer into 
+          different columns. This class will provide the footer with a <span class="code-quote">display</span> of flex and its justification will be set to 
+          be spaced around; the <span class="code-quote">padding</span> will be reduced to 2.5rem (25px) and the elements will align to the center. More 
+          importantly, the ul elements inside will be set to columns and the li elements will align its text to the start of the container.
+          <div class="container">
+            <footer class="footer-list" style="background-color: #252525; color: #ffffff;">
+              <div>Text Element</div>
+              <ul>
+                <li>First</li>
+                <li>List</li>
+                <li>Element</li>
+              </ul>
+              <ul>
+                <li>Second</li>
+                <li>List</li>
+                <li>Element</li>
+              </ul>
+            </footer>
+          </div>
+          To implement text aside from the lists, use a div element.
+        </div>
+        <div class="row row-code-tag">
+          <h5>Code Tag</h5>
+          <div class="col-12">
+            Tejuino contains an easy to access code class in the span element that provides a quick modification of text. You can see its use all throughout 
+            this page! To use this feature, add the <span class="code-quote">code-quote</span> class to a span element. This class will set the text's 
+            <span class="code-quote">font-family</span> to monospace and will provide a <span class="code-quote">background-color</span> of #1b1f232e.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

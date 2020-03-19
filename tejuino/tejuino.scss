@@ -1,19 +1,22 @@
-// General Imports
-@import 'assets/general/reset.scss';
-@import 'assets/general/navbar.scss';
-@import 'assets/general/footer.scss';
-@import 'assets/general/inputs.scss';
-@import 'assets/general/lists.scss';
+// Reset
+@import 'lib/general/reset.scss';
 
 // Display Imports
-@import 'assets/display/container.scss';
-@import 'assets/display/row.scss';
-@import 'assets/display/columns.scss';
-@import 'assets/display/setAttributes.scss';
+@import 'lib/display/container.scss';
+@import 'lib/display/row.scss';
+@import 'lib/display/columns.scss';
+@import 'lib/display/setAttributes.scss';
 
 // Texts Imports
-@import 'assets/texts/titles.scss';
-@import 'assets/texts/links.scss';
+@import 'lib/texts/titles.scss';
+@import 'lib/texts/links.scss';
+@import 'lib/texts/inputs.scss';
+@import 'lib/texts/lists.scss';
+
+// General Imports
+@import 'lib/general/navbar.scss';
+@import 'lib/general/footer.scss';
+@import 'lib/general/codeTag.scss';
 
 // Buttons Imports
-@import 'assets/buttons/linkButtons.scss';
+@import 'lib/buttons/linkButtons.scss';

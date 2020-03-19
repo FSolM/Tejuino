@@ -1,15 +1,11 @@
 // Tejuino's anchor behaviour
 
-// Variables
-$maincolor: #1a1a1a;
-$linkcolor: #004c9c;
-
 a {
-  color: $maincolor;
+  color: inherit;
   font-size: inherit;
   text-decoration: none;
   &:hover {
-    color: $linkcolor;
+    color: #004c9c;
     text-decoration: none;
   }
 }
