@@ -67,7 +67,7 @@
             </div>
           </div>
           <div class="col-12">
-            For the best experience, use <span class="code-quote">div</span>s for all of the three elements.
+            For the best experience, use divs for all of the three elements.
           </div>
         </div>
         <div class="row row-containers">
@@ -232,8 +232,8 @@
             Tejuino uses 10px as a base measurement for everything related to the page, from fonts to spacing. It's 
             recommended that users stick to the <span class="code-quote">rem</span> as the default measure tool for 
             additional <span class="code-quote">css</span> files.<br />
-            Although it's recommended that the user use <span class="code-quote">div</span> as the default tag, 
-            <span class="code-quote">p</span> tags are also supported, providing a <span class="code-quote">margin: 0.75 0</span>
+            Although it's recommended that the user use div as the default tag, <span class="code-quote">p</span> 
+            tags are also supported, providing a <span class="code-quote">margin: 0.75 0</span>.
           </div>
           <h6>Defaults</h6>
           <div class="col-12">
@@ -358,6 +358,7 @@
             Labels for inputs will only modify the <span class="code-quote">font-weight</span> of the text, modifying it to 700.
           </div>
         </div>
+        <div class="row row-lists">Lists Info</div>
       </div>
     </div>
     <div class="row row-info-buttons">
@@ -401,10 +402,106 @@
     </div>
     <div class="row row-info-general">
       <div class="container">
-        <div class="row row-navbars">Navbars Info</div>
-        <div class="row row-footers">Footers Info</div>
-        <div class="row row-lists">Lists Info</div>
-        <div class="row row-code-tag">Code Tag Info</div>
+        <div class="row row-navbars">
+          <h5>Navbars</h5>
+          <div class="col-12">
+            Tejuino provides general layout for nav elements and it even contains a special class that provides simple and quick decoration for it. 
+            Tejuino navs are design to have two elements in them: an image and an list element, an ul element to be precise, with the navpoints of the 
+            page. By default, nav elements will have a <span class="code-quote">display</span> of flex, will 
+            <span class="code-quote">align-items</span> to the center and will <span class="code-quote">justify-content</span> to the spaces between 
+            (pushing both elements to the sides). As mentioned earlier, Tejuino navbars use inside of them a ul list element for the navpoints of it. 
+            This ul element also has a <span class="code-quote">display</span> of flex, but their elements are justified center and it has a margin of 
+            <span class="code-quote">margin</span> of 0 3rem (30px); their li elements have a <span class="code-quote">margin</span> of 1rem or 10px to 
+            all sides. A base Tejuino navbar will look like this:
+            <div class="container">
+              <nav style="background-color: #9fd0b6;">
+                <ul>
+                  <li>Element</li>
+                  <li>Element</li>
+                </ul>
+              </nav>
+            </div>
+            An additional class can be added in the nav element to control the justification of it. The available classes are:
+            <div class="container">
+              <ul>
+                <li><span class="code-quote">nav-center</span></li>
+                <li><span class="code-quote">nav-left</span></li>
+                <li><span class="code-quote">nav-right</span></li>
+              </ul>
+            </div>
+            To provide the quick decoration for the navbars, just add a nav-deco class to the nav element:
+            <div class="container">
+              <nav class="nav-deco" style="background-color: #9fd0b6;">
+                <ul>
+                  <li>Element</li>
+                  <li>Element</li>
+                  <li>Element</li>
+                </ul>
+              </nav>
+            </div>
+            The last li element of the list won't have the decoration; additionally, the decoration will reset the <span class="code-quote">margin</span> of 
+            the li elements to 1rem (10px) 0. The decorations have their own <span class="code-quote">margin</span> of 0 2rem (20px).<br />
+            <i>The background colours of the navbars are just illustrative, the nav element does not come with them</i><br />
+            Tejuino contains additional nav behaviours. To use them, just add the as an additional class in the nav element. These include:
+            <div class="container">
+              <ul>
+                <li>Sticky Nav: <span class="code-quote">nav-sticky</span></li>
+                <li>Fixed top Nav: <span class="code-quote">nav-top</span></li>
+              </ul>
+            </div>
+            It is recommended to use the <span class="code-quote">set-none</span> classes when developing in mobile to avoid any unexpected nav behaviour.
+          </div>
+        </div>
+        <div class="row row-footers">
+          <h5>Footers</h5>
+          <div class="col-12">
+            Footer elements have a similar behaviour to the nav ones. Default footer behaviour will set its <span class="code-quote">display</span> as a block, 
+            will provide a massive <span class="code-quote">padding</span> of 5rem (50px) 0, and will align the text to center; this simple footer can be used 
+            without the need to add a special <span class="code-quote">col</span> div.
+            <div class="container">
+              <footer style="background-color: #252525; color: #ffffff;">Some footer, right?</footer>
+            </div>
+          </div>
+          An additional use of a list element (ul to be precise) can help to separate the different elements in the footer. The ul element will be set to have 
+          a <span class="code-quote">display</span> of flex, with its justification set to center; additionally, their 
+          <span class="code-quote">list-style</span> will be set to none and their <span class="code-quote">margin</span> will be 0.
+          <div class="container">
+            <footer style="background-color: #252525; color: #ffffff;">
+              <ul>
+                <li>A list?</li>
+                <li>In my footer?</li>
+              </ul>
+            </footer>
+          </div>
+          Footers can also be set to have a special class called <span class="code-quote">footer-list</span>. This class will reorganize the footer into 
+          different columns. This class will provide the footer with a <span class="code-quote">display</span> of flex and its justification will be set to 
+          be spaced around; the <span class="code-quote">padding</span> will be reduced to 2.5rem (25px) and the elements will align to the center. More 
+          importantly, the ul elements inside will be set to columns and the li elements will align its text to the start of the container.
+          <div class="container">
+            <footer class="footer-list" style="background-color: #252525; color: #ffffff;">
+              <div>Text Element</div>
+              <ul>
+                <li>First</li>
+                <li>List</li>
+                <li>Element</li>
+              </ul>
+              <ul>
+                <li>Second</li>
+                <li>List</li>
+                <li>Element</li>
+              </ul>
+            </footer>
+          </div>
+          To implement text aside from the lists, use a div element.
+        </div>
+        <div class="row row-code-tag">
+          <h5>Code Tag</h5>
+          <div class="col-12">
+            Tejuino contains an easy to access code class in the span element that provides a quick modification of text. You can see its use all throughout 
+            this page! To use this feature, add the <span class="code-quote">code-quote</span> class to a span element. This class will set the text's 
+            <span class="code-quote">font-family</span> to monospace and will provide a <span class="code-quote">background-color</span> of #1b1f232e.
+          </div>
+        </div>
       </div>
     </div>
   </div>
